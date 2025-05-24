@@ -1,0 +1,63 @@
+export const plans = [
+  {
+    name: 'Starter',
+    description: 'Perfect for small fleets just getting started with GPS tracking.',
+    price: {
+      monthly: 29,
+      annual: 290,
+    },
+    features: [
+      'Up to 5 vehicles',
+      'Real-time tracking',
+      'Basic reporting',
+      'Email support',
+      'Mobile app access',
+      '1 user account',
+    ],
+    cta: 'Start Free Trial',
+    popular: false,
+  },
+  {
+    name: 'Professional',
+    description: 'Ideal for growing businesses with more complex fleet management needs.',
+    price: {
+      monthly: 79,
+      annual: 790,
+    },
+    features: [
+      'Up to 20 vehicles',
+      'Real-time tracking',
+      'Advanced reporting',
+      'Priority support',
+      'Mobile app access',
+      'Up to 5 user accounts',
+      'Route optimization',
+      'Driver behavior monitoring',
+    ],
+    cta: 'Start Free Trial',
+    popular: true,
+  },
+  {
+    name: 'Enterprise',
+    description: 'For large fleets requiring advanced features and customization.',
+    price: {
+      monthly: 199,
+      annual: 1990,
+    },
+    features: [
+      'Unlimited vehicles',
+      'Real-time tracking',
+      'Custom reporting',
+      '24/7 dedicated support',
+      'Mobile app access',
+      'Unlimited user accounts',
+      'Route optimization',
+      'Driver behavior monitoring',
+      'Custom integrations',
+      'API access',
+      'White-label solution',
+    ],
+    cta: 'Contact Sales',
+    popular: false,
+  },
+]
