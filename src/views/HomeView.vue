@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { onMounted, defineAsyncComponent, ref } from 'vue'
 import HeroSection from '../components/sections/HeroSection.vue'
-const FeaturesSection = defineAsyncComponent(
-  () => import('../components/sections/FeaturesSection.vue'),
-)
+import FeaturesSection from '../components/sections/FeaturesSection.vue'
 const DemoSection = defineAsyncComponent(() => import('../components/sections/DemoSection.vue'))
 const PricingSection = defineAsyncComponent(
   () => import('../components/sections/PricingSection.vue'),
@@ -93,21 +91,13 @@ onMounted(() => {
     />
 
     <!-- Features Section -->
-    <div class="load-trigger" data-section="features"></div>
     <div class="animate-trigger" data-animate="features"></div>
-    <Suspense v-if="visibleSections.features">
-      <FeaturesSection
-        :class="[
-          'transition-all duration-700 ease-out',
-          animatedSections.features ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5',
-        ]"
-      />
-      <template #fallback>
-        <div class="h-96 flex items-center justify-center">
-          <div class="animate-pulse text-gray-400">Loading features...</div>
-        </div>
-      </template>
-    </Suspense>
+    <FeaturesSection
+      :class="[
+        'transition-all duration-700 ease-out',
+        animatedSections.features ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5',
+      ]"
+    />
 
     <!-- Demo Section -->
     <div class="load-trigger" data-section="demo"></div>
