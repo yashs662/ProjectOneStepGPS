@@ -34,13 +34,14 @@ const navigationSections = computed(() => [
 
         <!-- Social Links -->
         <div>
-          <h3 class="text-sm font-semibold text-white uppercase tracking-wider">Connect</h3>
+          <p class="text-sm font-semibold text-white uppercase tracking-wider">Connect</p>
           <ul class="mt-4 flex space-x-6">
             <li v-for="item in footerLinks.social" :key="item.name">
               <a
                 :href="item.href"
                 class="text-gray-400 hover:text-white transition-colors duration-200"
                 v-html="getSocialIcon(item.icon)"
+                aria-label="Social Link {{ item.name }}"
               >
               </a>
             </li>

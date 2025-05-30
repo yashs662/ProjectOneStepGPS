@@ -61,14 +61,14 @@ const stats = [
             class="w-full mt-12 lg:mt-0 lg:col-span-6 flex flex-col bg-white rounded-xl shadow-xl p-6 border border-slate-100 h-fit self-center"
           >
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div v-for="stat in stats" :key="stat.label" class="p-4 bg-slate-50 rounded-lg">
+              <dl v-for="stat in stats" :key="stat.label" class="p-4 bg-slate-50 rounded-lg">
                 <dt class="text-sm font-medium text-slate-500">
                   {{ stat.label }}
                 </dt>
                 <dd class="mt-1 text-2xl font-semibold text-slate-800">
                   {{ stat.value }}
                 </dd>
-              </div>
+              </dl>
             </div>
 
             <!-- Feature Highlights -->

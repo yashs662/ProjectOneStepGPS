@@ -20,14 +20,14 @@ withDefaults(defineProps<FAQSectionProps>(), {
       {{ title }}
     </h3>
     <div class="space-y-8">
-      <div
+      <dl
         v-for="faq in faqs"
         :key="faq.question"
         class="bg-white rounded-xl p-6 shadow-sm border border-slate-200"
       >
         <dt class="text-lg font-semibold text-slate-800 mb-2">{{ faq.question }}</dt>
         <dd class="text-slate-600">{{ faq.answer }}</dd>
-      </div>
+      </dl>
     </div>
   </div>
 </template>

@@ -212,51 +212,45 @@ const handleSubmit = async (e: Event) => {
             <div class="p-8">
               <h3 class="text-lg font-semibold text-slate-800 mb-8">Contact Information</h3>
               <dl class="space-y-6">
-                <div class="flex items-start">
+                <dt class="flex items-start">
                   <div class="flex-shrink-0">
                     <Mail class="h-6 w-6 text-emerald-600" />
                   </div>
-                  <div class="ml-3">
-                    <dt class="text-sm font-medium text-slate-800">Email</dt>
-                    <dd class="mt-1 text-sm text-slate-600">
-                      <a
-                        href="mailto:sales@onestepgps.com"
-                        class="hover:text-emerald-600 transition-colors duration-200"
-                        >sales@onestepgps.com</a
-                      >
-                    </dd>
-                  </div>
-                </div>
+                  <span class="ml-3 text-sm font-medium text-slate-800">Email</span>
+                </dt>
+                <dd class="ml-9 mt-1 text-sm text-slate-600">
+                  <a
+                    href="mailto:sales@onestepgps.com"
+                    class="hover:text-emerald-600 transition-colors duration-200"
+                    >sales@onestepgps.com</a
+                  >
+                </dd>
 
-                <div class="flex items-start">
+                <dt class="flex items-start mt-6">
                   <div class="flex-shrink-0">
                     <Phone class="h-6 w-6 text-emerald-600" />
                   </div>
-                  <div class="ml-3">
-                    <dt class="text-sm font-medium text-slate-800">Phone</dt>
-                    <dd class="mt-1 text-sm text-slate-600">
-                      <a
-                        href="tel:+18005551234"
-                        class="hover:text-emerald-600 transition-colors duration-200"
-                        >+1 (800) 555-1234</a
-                      >
-                    </dd>
-                  </div>
-                </div>
+                  <span class="ml-3 text-sm font-medium text-slate-800">Phone</span>
+                </dt>
+                <dd class="ml-9 mt-1 text-sm text-slate-600">
+                  <a
+                    href="tel:+18005551234"
+                    class="hover:text-emerald-600 transition-colors duration-200"
+                    >+1 (800) 555-1234</a
+                  >
+                </dd>
 
-                <div class="flex items-start">
+                <dt class="flex items-start mt-6">
                   <div class="flex-shrink-0">
                     <MapPin class="h-6 w-6 text-emerald-600" />
                   </div>
-                  <div class="ml-3">
-                    <dt class="text-sm font-medium text-slate-800">Office</dt>
-                    <dd class="mt-1 text-sm text-slate-600">
-                      123 Fleet Street<br />
-                      San Francisco, CA 94105<br />
-                      United States
-                    </dd>
-                  </div>
-                </div>
+                  <span class="ml-3 text-sm font-medium text-slate-800">Office</span>
+                </dt>
+                <dd class="ml-9 mt-1 text-sm text-slate-600">
+                  123 Fleet Street<br />
+                  San Francisco, CA 94105<br />
+                  United States
+                </dd>
               </dl>
             </div>
           </div>
